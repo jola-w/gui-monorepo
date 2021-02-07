@@ -17,6 +17,11 @@
   },
   "projects": {
     "eva-asystent": { "tags": [] },
-    "eva-asystent-e2e": { "tags": [], "implicitDependencies": ["eva-asystent"] }
+    "eva-asystent-e2e": {
+      "tags": [],
+      "implicitDependencies": ["eva-asystent"]
+    },
+    "my-app": { "tags": [] },
+    "my-app-e2e": { "tags": [], "implicitDependencies": ["my-app"] }
   }
 }

@@ -1,0 +1,10 @@
+
+<div class="searchbar_continer">
+  <div class="searchbar">
+    <div class="searchbar__group">
+      <div class="searchbar__group__loop search-btn--silver"><fa-icon [icon]="faSearch"></fa-icon></div>
+      <div class="searchbar__group__search"><input type="text" class="form__input" placeholder="{{'WEATHER.SEARCHBARHOLDER' | translate}}" id="city" #city required></div>
+      <div class="searchbar__group__loop search-btn--primary" (click)="searchWeatcher(city.value)"><fa-icon [icon]="faSearch"></fa-icon></div>
+    </div>
+  </div>
+</div>

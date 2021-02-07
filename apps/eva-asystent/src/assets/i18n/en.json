@@ -1,0 +1,28 @@
+{
+  "Sitetitle": "Angular Multi Language Site",
+  "HEADER": {
+    "QUOTATION": "A goal without a plan is just a wish.",
+    "SYSTEM_NAME": "EvaAsystent"
+  },
+  "LOGINFORM": {
+    "HEADER": "Log in to system",
+    "LOGIN": "Login",
+    "PASSWORD": "Password",
+    "SIGN_UP": "Sign up",
+    "FOOTER": {
+      "COPYRIGHT": "© 2020 PROGRAM-KATALIZATOR All rights reserved"
+    }
+  },
+  "WEATHER": {
+    "SEARCHBARHOLDER": "City to search the weatcher",
+    "CLOUDS": "Clouds:",
+    "FEELS_LIKE": "Feels like:",
+    "HUMIDITY": "Humidity:",
+    "PRESSURE": "Pressure:",
+    "TEMP_AVER": "Temp. average:",
+    "WIND": "Wind speeed:",
+    "SPEED_UNIT": "km/h",
+    "CHART_TITLE": "Temperature on: ",
+    "DEAULT_CITY": "Warsaw"
+  }
+}

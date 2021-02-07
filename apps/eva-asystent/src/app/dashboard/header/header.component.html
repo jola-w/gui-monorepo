@@ -1,0 +1,29 @@
+
+<div class="header">
+
+  <div class="header__logo">
+    {{'HEADER.SYSTEM_NAME' | translate}}
+  </div>
+  <div class="header__quoter">
+    {{'HEADER.QUOTATION' | translate}}
+  </div>
+
+  <div class="header__langpicker">
+    <button class="header__langpicker__button" mat-icon-button [matMenuTriggerFor]="menu" >
+      <mat-icon>language</mat-icon>
+      <span>{{selLanguage}}</span>
+    </button>
+    <mat-menu
+      class="header__langpicker__content"
+      #menu="matMenu">
+      <button
+        mat-menu-item *ngFor="let language of translate.getLangs()"
+        class="header__langpicker__pick"
+        [value]="language"
+        (click)="switchLang(language)">
+        {{language}}
+      </button>
+    </mat-menu>
+  </div>
+
+</div>

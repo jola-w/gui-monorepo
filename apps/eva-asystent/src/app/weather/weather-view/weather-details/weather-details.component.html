@@ -1,0 +1,16 @@
+  <div class="weather__day__details" >
+   <div class="weather__day__details__box" *ngFor="let weather of dailyWeather">
+     <div class="weather__day__details__det">
+        <div class="weather__day__details__det__info">
+          <div class="weather__day__details__det__info__desc">{{weather.weather[0].description}}</div>
+          <div class="weather__day__details__det__info__desc">{{weather.dt_txt | hourfromdate}}</div>
+          <div class="weather__day__details__det__info__desc">{{weather.main.temp}}</div>
+          <div class="weather__day__details__det__info__desc">{{weather.wind.speed}} km/h</div>
+        </div>
+        <div class="weather__day__details__det__img">
+          <img [src]=getImgPath(weather.weather[0].icon) />
+        </div>
+      </div>
+    </div>
+
+  </div>

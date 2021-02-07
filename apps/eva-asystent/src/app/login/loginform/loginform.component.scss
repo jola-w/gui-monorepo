@@ -1,0 +1,134 @@
+@import "./../../../variables.scss";
+
+.login-form {
+
+  padding: 3rem;
+  padding-top: 15%;
+  display: block;
+
+  &__header {
+    font-size: 3rem;
+    width: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &__form__group {
+    padding: 4rem;
+    display: flex;
+
+  .form__input {
+    border-radius: 2px;
+    display: block;
+    padding: 2.0rem 2rem;
+    border: none;
+    width: 100%;
+    border-bottom: 3px solid transparent;
+    font-size: 2rem;
+    transition: all .8s;
+    justify-content: center;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
+
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid $color-primary-dark;
+
+  }
+
+  }
+  .login-buttons {
+    margin-bottom: 3rem;
+    width: 100%;
+
+    .login-buttons__group {
+      display: flex;
+      justify-content: center;
+
+      .btn--icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .login-btn-sp {
+          margin: 0rem 0.5rem;
+        }
+      }
+      .btn {
+        margin: 4rem 4rem;
+        width: 50%;
+      }
+
+      .btn, .btn:link, .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.6rem;
+        border: none;
+        cursor: pointer;
+        color: $color-primary;
+
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+        .btn:hover::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+        }
+
+      .btn:active, .btn:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+      .btn--white {
+        background-color: #fff;
+        color: $color-primary;
+        font-weight: 600;
+      }
+
+        .btn--white::after {
+          background-color: #fff;
+        }
+
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn--animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+      @keyframes moveInBottom {
+        0% {
+          opacity: 0;
+          transform: translateY(3rem);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0);
+        }
+      }
+    }
+  }
+}

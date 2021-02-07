@@ -1,0 +1,21 @@
+<div class="weather__container">
+  <ev-spinner [loading]='isLoaded' [httploading]='ishttpLoaded'></ev-spinner>
+  <ev-searchbar (cityToSearch) = "searchWeatcherForCity($event)"></ev-searchbar>
+  <div class="weather__details">
+    <ev-weather-details [dailyWeather] = "dailyWeather"></ev-weather-details>
+  </div>
+  <div class="carousel-container">
+      <div class="carousel-container__slider">
+      <igx-carousel #carousel (onSlideChanged)="onSlideChanged($event)">
+        <igx-slide *ngFor="let weather of weatherDto;">
+          <div class="carousel-container__slider__content">
+          <ev-slider-content [weather] = "weather" [cityWeather]="cityWeather"></ev-slider-content>
+        </div>
+        </igx-slide>
+      </igx-carousel>
+      </div>
+    <div class="carousel-container__ch">
+      <ev-tempchart [item]="dailyTemp"></ev-tempchart></div>
+  </div>
+</div>
+

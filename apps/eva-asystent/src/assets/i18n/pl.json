@@ -1,0 +1,29 @@
+{
+  "Sitetitle": "Angular Multi Language Site - pl",
+  "HEADER": {
+    "QUOTATION": "Cel bez planu jest tylko życzeniem.",
+    "SYSTEM_NAME": "EvaAsystent"
+  },
+  "LOGINFORM": {
+    "HEADER": "Zaloguj się do systemu",
+    "LOGIN": "Login",
+    "PASSWORD": "Hasło",
+    "SIGN_UP": "Rejestracja",
+    "FOOTER": {
+      "COPYRIGHT": "© 2020 PROGRAM-KATALIZATOR Wszelkie prawa zastrzeżone"
+    }
+  },
+  "WEATHER": {
+    "SEARCHBARHOLDER": "Miasto, dla którego szukasz pogody",
+    "CLOUDS": "Zachmurzenie:",
+    "FEELS_LIKE": "Temp. odczuwalna:",
+    "HUMIDITY": "Wilgotność:",
+    "PRESSURE": "Ciśnienie:",
+    "TEMP_AVER": "Średnia temp.",
+    "WIND": "Prędkość wiatru",
+    "SPEED_UNIT": "km/h",
+    "CHART_TITLE": "Temperatura w dniu: ",
+    "DEAULT_CITY": "Warszawa"
+
+  }
+}

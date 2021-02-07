@@ -1,0 +1,28 @@
+<div class="login-form">
+  <div class="login-form__header">{{'LOGINFORM.HEADER' |translate}}</div>
+    <div class="login-form__form__group">
+      <input type="text" class="form__input" placeholder="{{'LOGINFORM.LOGIN' | translate}}" id="login" required>
+    </div>
+
+    <div class="login-form__form__group">
+      <input type="email" class="form__input" placeholder="{{'LOGINFORM.PASSWORD' | translate}}" id="email" required>
+    </div>
+    <div class="login-buttons">
+      <div class="login-buttons__group">
+        <button id = "login-btn"class="btn btn--white btn--animated">
+          <div class="btn--icons">
+            <span class="login-btn-sp"><mat-icon>login</mat-icon></span>
+            <span class="login-btn-sp">{{'LOGINFORM.LOGIN' | translate }}</span>
+          </div>
+        </button>
+
+        <button id = "sign-up-btn" class="btn btn--white btn--animated">
+          <div class="btn--icons">
+          <span class="login-btn-sp"><mat-icon>assignment_ind</mat-icon></span>
+          <span class="login-btn-sp">{{'LOGINFORM.SIGN_UP' | translate }}</span>
+        </div>
+        </button>
+      </div>
+    </div>
+
+</div>

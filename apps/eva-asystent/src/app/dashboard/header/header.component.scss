@@ -1,0 +1,63 @@
+@import "../../../variables.scss";
+
+mat-menu {
+  transition: all 0.8s !important;
+}
+mat-icon {
+color: $color-primary;
+}
+.mat-menu-item {
+  text-align: center !important;
+  width: 5rem;
+}
+.mat-menu-panel {
+  transition: all .2s !important;
+}
+.cdk-overlay-pane {
+  transition: all 0.9s !important;
+}
+.header__quoter {
+  font-style: italic;
+}
+.header__logo {
+  margin: 2rem;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: rgba($color-grey-light-1, .8);
+  width: 100%;
+  height: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 2rem;
+
+  .header__langpicker {
+    width: 11rem;
+    height: 5rem;
+    span {
+      color: $color-primary;
+    }
+
+    .header__langpicker__button {
+        width: 100%;
+        height: 100%;
+        background-color: $color-grey-light-1;
+        border: none;
+
+        &__button {
+          width: 100%;
+          height: 100%;
+          background-color: $color-grey-light-1;
+          border: none;
+        }
+      }
+
+
+
+}
+
+}
+

@@ -1,0 +1,74 @@
+@import "../../variables.scss";
+
+.login-page {
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-columns: 45% 55%;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
+  justify-content: center;
+  width: 213vh;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem;
+  background-color: $color-grey-light-1;
+
+  &__header-1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    padding: 3rem;
+    color: $color-primary;
+
+  }
+
+  .section-1 {
+    grid-column: 1/2;
+    grid-row: 2;
+    background: #4ecdc4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ecdc4, #556270); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ecdc4, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .section-2 {
+    grid-column: 2/3;
+    grid-row: 2;
+    background-image: linear-gradient(rgba(99, 198, 176, 0.2), rgba(255, 255, 255, 0.5)), url(./../../assets/img/back.jpg);
+    background-size: cover;
+  }
+
+  footer {
+    grid-column: 1/-1;
+    grid-row: 3;
+    background-color: $color-grey-light-1;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vw 20vw;
+  grid-template-columns: 2fr 2fr;
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+
+  .login_1 {
+    grid-row: 1;
+    grid-column: 1;
+    background-color: red;
+  }
+  .login_2 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .password_1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .password_2 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+}
+
